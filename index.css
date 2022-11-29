@@ -1,28 +1,40 @@
 /* CSS sections
-1. Universal code 
-2. Navigation bar
-3. Hero splash
-4. About me
-5. Projects
-6. Skills and experience
-7. Contact
-8. Footer */
+1. Imports
+2. Universal code 
+3. Navigation bar
+4. Hero splash
+5. About me
+6. Projects
+7. Skills and experience
+8. Contact
+9. Footer */
+
+/* 1. Imports */
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Varela+Round&display=swap');
+
 
 /* 1. Universal code */
 
-.body{
+body{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
 
 }
 
 h1 {
-
+    font-family: 'Archivo Black', sans-serif;
 }
 
 h2 {
+    font-family: 'Archivo Black', sans-serif;
 
 }
 
 h3 {
+    font-family: 'Archivo Black', sans-serif;
 
 }
 
@@ -31,34 +43,118 @@ h4 {
 }
 
 button {
-
+    appearance: none;
+    background-color: white;
+    border: 2px solid #394955;
+    border-radius: 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0;
+    min-height: 50px;
+    min-width: 0;
+    outline: none;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
 }
 
+button:disabled {
+    pointer-events: none;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #394955;
+}
+
+button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+    
 /* 2. Navigation bar  */
 
 .navBar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 4rem;
+    margin: 0 auto;
+    padding: 10px 0px;
+    background-color: rgba(255,255,255,0.01);
+    transition: all 1s;
 
 }
 
-.narBar ul {
+.navBarTransparentBackground {
+    transition: all 1s;
+    background-color: rgba(255,255,1,0.5);
 
 }
-
-.narBar li {
-
+.navIcon p {
+    display: inline-flex;
+    padding-left: 1rem;
+    color: white;
 }
 
-.navBar a {
+.navIcon img{
+    display: inline-flex;
+    max-width: 4rem;
+    margin: 0 auto;
+    padding-left: 1rem;
+    border-radius: 50%;
+    vertical-align: middle;
+    transition: all 0.3s ease 0s;
+}
 
+.navIcon img:hover{
+    border-radius: 70%;
+}
+
+.navBar ul, li, a {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    text-transform: lowercase;
+}
+
+.navBar li  {
+    padding: 0px 2rem;
+ }
+
+.navBar li a {
+    padding: 0 1.5rem;
+    transition: all 0.3s ease 0s;
+ 
+}
+
+.navBar li a:hover {
+    color:blueviolet;
+  
 }
 
 /* 3. Hero splash */
 
 .heroContainer{
+    padding-top: 4rem;
+    background-color: #13b4fc;
 
 }
 .heroText{
-
+    color: white
 }
 .heroButtons{
 
@@ -141,18 +237,37 @@ button {
 /* 8. Footer */
 
 footer {
-
+    position: inline-block;
+    width: 100%;
+    height: 4rem;
+    margin: 0 auto;
+    background-color: blue;
+    transition: all 1s;
 }
 
 footer ul {
-
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    justify-text: center;
+    
 }
 
 footer li{
-
+    display: inline-flex;
+    justify-self: center;
+    align-items: center;
 }
 
 footer a{
-
+    text-decoration: none;
+    color: black;
+    width: 150px;
+    padding: 1rem 1.5rem;
+    display: block;
+    text-transform: lowercase;
+    font-weight: bold;
+    text-align: center;
 }
 
