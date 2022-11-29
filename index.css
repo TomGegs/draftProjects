@@ -1,0 +1,158 @@
+/* CSS sections
+1. Universal code 
+2. Navigation bar
+3. Hero splash
+4. About me
+5. Projects
+6. Skills and experience
+7. Contact
+8. Footer */
+
+/* 1. Universal code */
+
+.body{
+
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+button {
+
+}
+
+/* 2. Navigation bar  */
+
+.navBar {
+
+}
+
+.narBar ul {
+
+}
+
+.narBar li {
+
+}
+
+.navBar a {
+
+}
+
+/* 3. Hero splash */
+
+.heroContainer{
+
+}
+.heroText{
+
+}
+.heroButtons{
+
+}
+
+/* 4. About me */
+
+.aboutMe{
+
+}
+.aboutMeTitle{
+
+}
+.aboutMeButtons{
+
+}
+
+.aboutMeButtons button {
+
+}
+
+.ittyBittyText{
+
+}
+.nittyGrittyText{
+
+}
+.ittyBittyImg{
+
+}
+.nittyGrittyImg{
+
+}
+
+/* 5. Projects */
+
+.projects{
+
+}
+.projectText{
+
+}
+.projectCardContainer{
+
+}
+.projectCards{
+
+}
+.projectCards img{
+
+}
+.projectCards p{
+
+}
+
+/* 6. Skills and experience */
+
+.skills{
+
+}
+.skillsText{
+
+}
+.skillsImg{
+
+}
+
+/* 7. Contact */
+
+.contact{
+
+}
+.contactText{
+
+}
+.contactForm{
+
+}
+
+/* 8. Footer */
+
+footer {
+
+}
+
+footer ul {
+
+}
+
+footer li{
+
+}
+
+footer a{
+
+}
+
