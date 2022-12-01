@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/index.css">
 
     <title>Tom G Front End Developer
     </title>
@@ -16,7 +16,7 @@
 
         <nav>
             <div id="navBarJs" class="navBar">
-                <div class="navIcon"><img src="/resources/images/headshot.jpg" alt=""><p>    Tom Geoghegan</p>
+                <div class="navIcon"><img src="" alt=""><p>    Tom Geoghegan</p>
                 </div>
                 <!-- script changes nav bar's background to solid color on scroll -->
                 <script src="script.js"></script>
@@ -33,48 +33,62 @@
 
 <!-- Hero Splash  -->
 
-    <div class="heroContainer">
-        <div class="heroText">
-            <h3>Hi there, I'm Tom</h3>
-            <h1>Develop. Deploy. Grow.</h1>
-            <h3>Connect with me:</h3>
-        </div>
-        <div class="heroButtons">
-            <button>Let's chat</button>
-        </div>
-        <div class="icons">
-            <a href="https://github.com/TomGegs"><img src="./resources/images/githubIcon.svg" alt="GitHub icon"></a>
-            <a href="https://github.com/TomGegs"><img src="./resources/images/linkedinIcon.svg" alt="LinkedIn icon"></a>
-            <a href="https://github.com/TomGegs"><img src="./resources/images/emailIcon.svg" alt="Email icon"></a>
+    <div class="heroBox">
+        <div class="heroContent">
+            <div class="heroText">
+                <h5>Hey there, I'm</h5>
+                <h1>Tom Geoghegan</h1>
+                <h3>Front-End Developer | Product Manager | Startup Enthusiast </h3>
+            </div>
+            <!-- <div class="heroButtons">
+                <button>Let's chat</button>
+            </div>
+            <div class="icons">
+                <a href="https://github.com/TomGegs"><img src="./resources/images/githubIcon.svg" alt="GitHub icon"></a>
+                <a href="https://github.com/TomGegs"><img src="./resources/images/linkedinIcon.svg" alt="LinkedIn icon"></a>
+                <a href="https://github.com/TomGegs"><img src="./resources/images/emailIcon.svg" alt="Email icon"></a>
+            </div> -->
         </div>
     </div>
 
     <!-- About me section -->
 
     <div class="aboutMe">
+        
+        <div class="custom-shape-divider-top-1669886866">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div> 
+
+    <div class="aboutMeContent">
+        
         <div class="aboutMeTitle">
             <h2>About me</h2>
-            <div class="aboutMeButtons">
-                <button>the itty-bitty</button>
-                <button>the nitty-gritty</button>
+        <div>
+            <img src="/resources/images/headshot.jpg" alt="">
+        </div>
+        <div class="aboutMeToggleContainer">
+            <span class="aboutBtn aboutBtn-1">
+                <input type="checkbox" name="" id="aboutMeToggle" onclick="toggleShortLongAboutMeText()">
+                <label for="aboutMeToggle"></label>
+            </span>
             </div>
-            <div class="ittyBittyText">
+    
+        <!-- <button type="text" class="aboutMeTextButtonToggle">Long Story</button> -->
+            <div id="shortAboutMeText" class="ittyBittyText">
                 I'm a front end developer experienced with HTML, CSS, JavaScript and a focus on React. <br>
-                Why don't we build something great together?
+                Why don't we build something great together?The digital world has enormous value;
             </div>
-            <div class="nittyGrittyText">
+            <div id="longAboutMeText" class="nittyGrittyText">
                 I'm a front end developer with a background as a project manager. I have experience with HTML, CSS, JavaScript and am focusing my current roles in React. I have experience with HTML, CSS, JavaScript and am focusing my current roles in React. <br>
                 I have experience with HTML, CSS, JavaScript and am focusing my current roles in React. I have experience with HTML, CSS, JavaScript and am focusing my current roles in React. <br>
                 Why don't we build something great together?
             </div>
         </div>
     </div>
-    <div class="ittyBittyImg">
-        <img src="" alt="">
     </div>
-    <div class="nittyGrittyImg">
-        <img src="" alt="">
-    </div>
+    
 
     <!-- Projects section -->
 

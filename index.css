@@ -11,36 +11,56 @@
 
 /* 1. Imports */
 /* Google font */
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&family=Rock+Salt&family=Sedgwick+Ave&family=Archivo+Black&family=Varela+Round&display=swap');
 
 
 /* 1. Universal code */
 
+
 body{
     font-size: 20px;
-    margin: 0;
+    margin: auto;
     padding: 0;
-    font-family: 'Varela Round', sans-serif;
-
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    min-height: 50rem;
 }
 
 h1 {
-    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Rock Salt', cursive;
+    /* font-family: 'Sedgwick Ave', cursive; */
+    color: black;
+    background-image: linear-gradient(125deg, #00d9ff, #ac19b1, #af0699);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-size: 3.5rem;
+
+
 }
 
 h2 {
-    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+
 
 }
 
 h3 {
-    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
 
 }
 
-h4 {
+h4, h5 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
 
 }
+
 
 button {
     appearance: none;
@@ -89,6 +109,7 @@ button:active {
     margin: 0 auto;
     padding: 10px 0px;
     background-color: rgba(255,255,255,0.01);
+    z-index: 10;   
     transition: all 0.3s;
 
 }
@@ -106,27 +127,14 @@ button:active {
     color: white;
 }
 
-.navIcon img{
-    display: inline-flex;
-    max-width: 4rem;
-    margin: 0 auto;
-    padding-left: 1rem;
-    border-radius: 50%;
-    vertical-align: middle;
-    transition: all 0.3s ease 0s;
-}
-
-.navIcon img:hover{
-    border-radius: 70%;
-}
-
 .navBar ul, li, a {
     display: inline-block;
     justify-content: center;
     align-items: center;
     vertical-align: middle;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 1.3rem;
+    font-family: 'Quicksand', sans-serif;
     text-decoration: none;
     text-align: center;
     color: white;
@@ -140,6 +148,7 @@ button:active {
 .navBar li a {
     padding: 0 1.5rem;
     transition: all 0.3s ease 0s;
+    
  
 }
 
@@ -150,43 +159,231 @@ button:active {
 
 /* 3. Hero splash */
 
-.heroContainer{
-    padding-top: 4rem;
-    background-color: #13b4fc;
-    height: 45rem;
-    display: inline-flex;
-    width: 100%;
+.heroBox{
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 1000px;
+    padding: 100px;
 
 }
+
+.heroContent{
+    display: flex;
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+
 .heroText{
-    color: white
+    text-align: center;
+    color: black;
+    margin: auto;
+    
+}
+
+
+.heroText span {
+    color: black;
 }
 .heroButtons{
 
 }
 
+.icons img{
+    position: relative;
+    display: inline-block;
+    max-width: 2rem;
+}
+
+/* arrow animation */
+
 /* 4. About me */
 
 .aboutMe{
+    display: flex;
+    position: relative;
+    margin: auto;
+    height: 30rem;
+    background-color: #ac19b1;
 
 }
+
+.custom-shape-divider-top-1669886866 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1669886866 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 45px;
+}
+
+.custom-shape-divider-top-1669886866 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+.aboutMeContent {
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+.aboutMe img{
+    max-width: 12vw;
+    border-radius: 60px;
+    margin:auto;
+}
+
 .aboutMeTitle{
-
+    display: inline-flex;
+    margin:auto;
+    padding-left: 25px;
 }
-.aboutMeButtons{
 
+.aboutMeTextButtonToggle{
+color: black;
 }
 
 .aboutMeButtons button {
 
 }
 
-.ittyBittyText{
+#shortAboutMeText{
 
 }
-.nittyGrittyText{
+
+#longAboutMeText{
+    display: none;
+}
+
+/* button  */
+
+.aboutMeToggleContainer {
+    display: flex;
+}
+
+.aboutBtn {
+    position: relative;
+    height: 3.3rem;
+  }
+
+.aboutBtn input  {
+    position: relative;
+    width: 13rem;
+    height: 3rem;
+    border-radius: 100px;
+    outline: none;
+    appearance: none;
+    font-weight: 400;
+    background-color: grey;
 
 }
+
+.aboutBtn input::before,
+.aboutBtn input::after{
+    z-index: 2;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #111;
+    font-weight: bolder;
+}
+
+.aboutBtn input::before {
+    content: "Long story";
+    left: 1.1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+.aboutBtn input::after {
+    content: "Short story";
+    right: 1.1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+
+.aboutBtn label{
+    z-index: 1;
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    border-radius: 100px;
+    width: 6.9rem;
+    box-shadow: 0 0px 10px rgba(0,0,0,0.25);
+
+}
+
+
+.aboutBtn.aboutBtn-1 input {
+    transition: 0.25s -0.1s;
+}
+
+.aboutBtn.aboutBtn-1:checked {
+    background-color: #34323D;
+}
+
+.aboutBtn.aboutBtn-1:checked::before {
+    color:#111;
+    transition: color 0.5s;
+   }
+
+.aboutBtn.aboutBtn-1:checked::after {
+color:#111;
+transition: color 0.5s;
+}
+
+
+.aboutBtn.aboutBtn-1 input:checked+label {
+    left: 3px;
+    right: 8rem;
+    background-color: white;
+    transition: left 0.5s, right 0.4s;
+}
+
+.aboutBtn.aboutBtn-1 input:not(:checked){
+    background-color: lightblue;
+    transition: background-color 0.5s;
+
+}
+
+.aboutBtn.aboutBtn-1 input:not(:checked):before{
+    color: #111;
+    transition: color 0.5s;
+    font-weight: 400;   
+
+}
+
+.aboutBtn.aboutBtn-1 input:not(:checked):after{
+    color: #1e1e1e;
+    transition: color 0.5s;
+    font-weight: bold;   
+
+}
+
+.aboutBtn.aboutBtn-1 input:not(checked) + label {
+    left: 6.39rem;
+    right: 1px;
+    background-color: #fff;
+    transition: left 0.4s, right 0.5s, background-color 0.35s;
+
+}
+
+/* button end */
+
 .ittyBittyImg{
 
 }
