@@ -44,7 +44,8 @@ h1 {
 
 h2 {
     font-family: 'Quicksand', sans-serif;
-
+    font-weight: 400;
+    font-size: 3rem;
 
 }
 
@@ -165,7 +166,7 @@ button:active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 1000px;
+    min-height: 1020px;
     padding: 100px;
 
 }
@@ -208,11 +209,12 @@ button:active {
     display: flex;
     position: relative;
     margin: auto;
-    height: 30rem;
-    background-color: #ac19b1;
+    height: 55rem;
+    background-color: mediumorchid;
+    background-image: linear-gradient(125deg, #94dce9, #00cbfd, #0857eb);
 
 }
-
+/* svg curved section border */
 .custom-shape-divider-top-1669886866 {
     position: absolute;
     top: 0;
@@ -234,45 +236,11 @@ button:active {
     fill: #FFFFFF;
 }
 
-
-.aboutMeContent {
-    max-width: 1200px;
-    margin: auto;
-
-}
-
-.aboutMe img{
-    max-width: 12vw;
-    border-radius: 60px;
-    margin:auto;
-}
-
-.aboutMeTitle{
-    display: inline-flex;
-    margin:auto;
-    padding-left: 25px;
-}
-
-.aboutMeTextButtonToggle{
-color: black;
-}
-
-.aboutMeButtons button {
-
-}
-
-#shortAboutMeText{
-
-}
-
-#longAboutMeText{
-    display: none;
-}
-
-/* button  */
+/* about me toggle button  */
 
 .aboutMeToggleContainer {
-    display: flex;
+    display: inline-flex;
+
 }
 
 .aboutBtn {
@@ -289,7 +257,6 @@ color: black;
     appearance: none;
     font-weight: 400;
     background-color: grey;
-
 }
 
 .aboutBtn input::before,
@@ -324,9 +291,7 @@ color: black;
     border-radius: 100px;
     width: 6.9rem;
     box-shadow: 0 0px 10px rgba(0,0,0,0.25);
-
 }
-
 
 .aboutBtn.aboutBtn-1 input {
     transition: 0.25s -0.1s;
@@ -364,14 +329,12 @@ transition: color 0.5s;
     color: #111;
     transition: color 0.5s;
     font-weight: 400;   
-
 }
 
 .aboutBtn.aboutBtn-1 input:not(:checked):after{
     color: #1e1e1e;
     transition: color 0.5s;
     font-weight: bold;   
-
 }
 
 .aboutBtn.aboutBtn-1 input:not(checked) + label {
@@ -379,16 +342,73 @@ transition: color 0.5s;
     right: 1px;
     background-color: #fff;
     transition: left 0.4s, right 0.5s, background-color 0.35s;
+}
+
+/* about me content */
+
+
+.aboutMeContent {
+    max-width: 1200px;
+    margin: auto;
+    color: white;
 
 }
 
-/* button end */
+.aboutMe img{
+    max-width: 12vw;
+    border-radius: 60px;
+    margin:auto;
+}
 
-.ittyBittyImg{
+.aboutMeTitle{
+    display: inline-flex;
+    margin:auto;
+    padding-left: 25px;
+    font-family: ;
+}
+
+.aboutMeTitle h2 {
+    display: inline-flex;
+
 
 }
-.nittyGrittyImg{
 
+.aboutMeTextButtonToggle {
+color: black;
+}
+
+
+
+
+#shortAboutMeText{
+    color: white;
+}
+
+#longAboutMeText{
+    display: none;
+}
+
+
+
+
+.custom-shape-divider-bottom-1669892879 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1669892879 svg {
+    position: relative;
+    display: block;
+    width: calc(145% + 1.3px);
+    height: 86px;
+}
+
+.custom-shape-divider-bottom-1669892879 .shape-fill {
+    fill: #FFFFFF;
 }
 
 /* 5. Projects */
